@@ -12,8 +12,8 @@
     <!-- header -->
     <header id="header">
       <div id="logo"><a href="../index.html"><span>Hello world</span> by SUNWOOme</a></div>
-      <!-- <a href="./php/board.php">Board</a> -->
-      <a href="../index.html">Home</a>
+      <a href="board.php">Board</a>
+      <a href="http://sunwoome.iptime.org/">Home</a>
     </header>
     <!-- nav -->
     <nav>
@@ -73,9 +73,31 @@
         </div>
 
       </div>
+      <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sunwoome-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
       <!-- footer -->
-      <footer>
-        This is a footer.
+      <footer id="footer">
+        <div><a href="#banner">SUNWOOME</a>  E-mail: sunwoojung517@gmail.com</div>
+        <div>디자인 참고: <a href="https://templated.co">Templated</a>. 이미지: <a href="https://unsplash.com/">Unsplash</a>.</div>
       </footer>
 
     </div>

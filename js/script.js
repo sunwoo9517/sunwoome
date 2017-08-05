@@ -3,7 +3,8 @@ $(function(){
   var $banner = $('#banner'),
     $header = $('#header'),
     $section = $('section'),
-    $gallery = $('#gallery');
+    $gallery = $('#gallery'),
+    $board = $('#board');
 
   function animateRotate(node, angle){
     var $elem = $(node);
@@ -146,6 +147,14 @@ $(function(){
     }
   });
   $gallery.scrollex({
+    initialize: function(){
+      $header.headerAlter({
+        backgroundColor: '#1f4f58',
+        display: 'block',
+      });
+    }
+  });
+  $board.scrollex({
     initialize: function(){
       $header.headerAlter({
         backgroundColor: '#1f4f58',

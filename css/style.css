@@ -50,6 +50,9 @@ body{
   color: #fff;
   text-decoration: none;
 }
+#header > a{
+  margin-left: 20px;
+}
 #header a span{
   font-weight: 700;
   color: #dcda65;
@@ -246,6 +249,9 @@ body.covering section{
 #gallery{
   background-color: #1f4f58;
 }
+#gallery #header #logo span{
+  color: #bbdddf;
+}
 #gallery #wrapper{
   max-width: 62rem;
   margin: 0 auto;
@@ -290,4 +296,145 @@ body.covering section{
 	-webkit-filter: blur(3px);
 	-ms-filter: blur(3px);
 	filter: blur(3px);
+}
+#gallery #footer{
+  background-color: #1f4f58;
+}
+#gallery #footer div{
+  color: rgba(0,0,0,0.7);
+}
+/*board*/
+#board{
+  background-color: #1f4f58;
+}
+#board #header #logo span{
+  color: #bbdddf;
+}
+#board #main{
+  display: flex;
+}
+#board nav{
+  width: 20%;
+  overflow-y: auto;
+}
+#board nav ul{
+  display: block;
+  background-color: #f2f2f2;
+  margin: 2rem 0;
+  margin-left: 1rem;
+  padding: 2rem 0;
+  height: 100vh;
+  overflow: hidden;
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+#board nav ul li{
+  color: #555;
+  display: block;
+  padding: 0.2rem 1rem;
+}
+#board nav ul li:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#board .middle{
+  margin: 0 auto;
+}
+#board .content{
+  background-color: #f2f2f2;
+  min-width: 480px;
+  width: 980px;
+  min-height: 80vh;
+  height: 100vh;
+  padding: 1rem 2rem;
+  box-shadow: 3px 3px 0 3px rgba(0,0,0,0.2);
+  margin-top: 2rem;
+  margin-bottom:3rem;
+}
+#board #user_title{
+  color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem 0;
+  background-color: tomato;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+#board #user_name{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: right;
+}
+#board #user_desc{
+  background-color: #e0e0e0;
+  border-radius: 7px;
+  font-size:1rem;
+  padding: 1rem;
+  color: #222;
+}
+#board #user_date{
+  font-size: 0.8rem;
+}
+#board .content h2{
+  color: #555;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+#board .content hr{
+  margin: 1rem;
+}
+#board .content .field{
+  margin-bottom: 2rem;
+}
+#board .content .field.half{
+  display: inline-block;
+  width: 48%;
+}
+#board .content label{
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: .3rem;
+  color: #f2f2f2;
+}
+#board .content input[type="text"], input[type="password"], textarea{
+  display: block;
+  background-color: rgba(144, 144, 144, 0.075);
+  border: 1px solid rgba(144, 144, 144, 0.55);
+  border-radius: 4px;
+  color: #f2f2f2;
+  outline:0;
+  padding: 0 1rem;
+}
+#board .content textarea{
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+}
+#board .content input[type="text"], input[type="password"]{
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 100%;
+}
+#board .content input[type="submit"]{
+  background-color: rgba(144, 144, 144, 0.55);
+  border: 2px solid rgba(170, 170, 170, 0.85);
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 15rem;
+  height: 3rem;
+  line-height: 3rem;
+  color: #f2f2f2;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+}
+#board .content input[type="submit"]:hover{
+  background-color: rgba(144, 144, 144, 0.35);
+  border: 2px solid rgba(170, 170, 170, 0.55);
+}
+#board #footer{
+  background-color: #1f4f58;
+}
+#board #footer div{
+  color: rgba(0,0,0,0.7);
 }
