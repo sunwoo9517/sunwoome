@@ -39,18 +39,22 @@
       <div class="inner">
         <div class="flex flex-2">
           <div class="col col-2">
-            <img src="images/ernest-porzi-19106.jpg" alt="" class="rounded">
+            <h2>About My Page</h2>
+            <h5>안녕하세요 환영합니다.</h5>
+            <p class="desc">
+              이 사이트는 기본적인 <span class="mark">HTML, CSS, Javascript, JQuery</span>로 만들어졌습니다.
+              저를 소개하는 목적으로 만들어진 사이트이며, <a href="https://templated.co">Templated</a>에서 디자인 참고를 했습니다.
+              페이지 구성은 <span class="mark">parallax</span> 페이지 구성 의도로 만들었으며, <span class="mark">background-attachment: fixed</span>를 이용해 배경을 고정하는 효과로 포인트를 주고자 했습니다.
+            </p>
           </div>
           <div class="col col-2">
-            <h2>About me</h2>
-            <h5>안녕하세요 정선우 입니다.</h5>
             <p class="desc">
-              Front-end developer를 목표로 준비 중입니다. 아르바이트와 병행하며 부지런히 공부하고 있습니다.<br>
-              웹 기술을 가지고 여러 컨텐츠들을 만들고 싶다는 생각에 여기까지 올 수 있었던 것 같습니다.<br>
-              웹 개발을 공부하면서 Python, Ruby, Java 등 다른 언어들도 공부하고 있습니다.
+            <span class="mark">페이지 효과</span>는 전체적으로 <a href="http://www.jqueryscript.net/demo/jQuery-Plugin-To-Animate-Content-As-User-Scrolls-scrollex/">Scrollex JQuery plugin</a>를 이용해서 페이지를 스크롤 할 때마다 매 페이지마다 JQuery animate() method를 이용해서 animation 효과를 주었습니다.
+            그리고 JQuery.fn를 extend시킴으로써 메인 페이지와 다른 페이지 사이를 넘나들 때마다 <span class="mark">Header의 위치를 바꾸는 효과</span>를 주었습니다.
             </p>
             <p class="desc">
-              이 페이지는 HTML, CSS, Javascript, JQuery로 만들어졌습니다.
+            Gallery의 이미지 효과는 <a href="http://www.jqueryscript.net/demo/Highly-Configurable-Responsive-Content-Lightbox-Plugin-For-jQuery-poptrox/">Poptrox JQuery plugin</a>를 이용해서 확대 효과를 연출했습니다.
+            Board는 php, apache, mysql를 이용해 간단한 게시판을 구성해 보았습니다. 웹 서버로는 <a href="https://bitnami.com/stack/lamp">bitnami</a>를 이용했습니다.
             </p>
           </div>
         </div>
@@ -68,23 +72,23 @@
             <img src="images/HTML5_Logo_512.png" title="HTML" alt="HTML">
             <h3>HTML</h3>
             <p class="desc">
-            HyperText Markup Language.<br>
-            HTML은 웹 페이지를 만들때 필요한 필수적인 Markup Language입니다. Tag로 정보를 나누면서 정보의 가치를 향상시킵니다.
+            <span class="mark">HyperText Markup Language.</span><br>
+            <span class="mark"><a href="https://www.w3schools.com/html/">HTML</a></span>은 웹 페이지를 만들때 필요한 필수적인 Markup Language입니다. Tag로 정보를 나누면서 정보의 가치를 향상시킵니다.
             </p>
           </div>
           <div class="col col-3">
             <img src="images/css3.png" title="CSS" alt="CSS">
             <h3>CSS</h3>
             <p class="desc">
-            Cascading Style Sheet.<br>
-            CSS는 웹 개발에서 미적인 부분을 담당합니다. CSS의 주요 역할은 웹페이지를 아름답게 꾸며주는 역할을 합니다. Tag의 selector, class, id를 이용해 스타일을 지정할 수 있습니다.
+            <span class="mark">Cascading Style Sheet.</span><br>
+            <span class="mark"><a href="https://www.w3schools.com/css/">CSS</a></span>는 웹 개발에서 미적인 부분을 담당합니다. CSS의 주요 역할은 웹페이지를 아름답게 꾸며주는 역할을 합니다. Tag의 selector, class, id를 이용해 스타일을 지정할 수 있습니다.
             </p>
           </div>
           <div class="col col-3">
             <img src="images/javascript.png" title="Javascript" alt="javascript">
             <h3>Javascript</h3>
             <p class="desc">
-            Javascript는 객체 기반의 스크립트 프로그래밍 언어로 주로 웹페이지 동작을 동적으로 제어하는 역할을 합니다. 또한 node.js와 같은 런타임 환경과 같이 server-side 네크워크 프로그래밍에도 사용되고 있습니다.
+            <span class="mark"><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">Javascript</a></span>는 객체 기반의 스크립트 프로그래밍 언어로 주로 웹페이지 동작을 동적으로 제어하는 역할을 합니다. 또한 node.js와 같은 런타임 환경과 같이 server-side 네크워크 프로그래밍에도 사용되고 있습니다.
             </p>
           </div>
         </div>
@@ -102,7 +106,7 @@
           <img src="images/jquery_logo.png" title="JQuery" alt="JQuery">
           <h3>JQuery</h3>
           <p class="desc">
-            JQuery는 Javascript library 중 하나이며 오늘날 가장 인기있는 library 중 하나입니다.<br>
+            <span class="mark"><a href="https://jquery.com/">JQuery</a></span>는 <span class="mark">Javascript library</span> 중 하나이며 오늘날 가장 인기있는 library 중 하나입니다.<br>
             JQuery의 문법은 코드 보기, 문서 객체 모델 찾기, 애니메이션 만들기, 이벤트 제어, Ajax 개발을 쉽게 할 수 있도록 디자인되었으며, jQuery는 plug-in을 개발할 수 있는 기능을 제공합니다.
           </p>
         </div>
@@ -120,7 +124,7 @@
             </a>
             <a href="https://yah.ac/1"><h3 class="em">코딩야학</h3></a>
             <p class="desc">
-              HTML, CSS, Javascript를 이용해 웹페이지를 만드는 것에서부터, 웹서버를 통해 정보를 제어해보는 하나의 완결된 웹 어플리케이션 실습을 해봄으로써 웹 개발에 대한 감각을 얻을 수 있었습니다.
+              HTML, CSS, Javascript를 이용해 웹페이지를 만드는 것에서부터, 웹서버를 통해 정보를 제어해보는 하나의 완결된 <span class="mark">웹 어플리케이션 실습</span>을 해봄으로써 웹 개발에 대한 감각을 얻을 수 있었습니다.
             </p>
           </div>
           <div class="col col-2">
@@ -129,7 +133,7 @@
             </a>
             <a href="https://courses.edx.org/courses/course-v1:Microsoft+DEV208x+2T2016/course/"><h3 class="em">Introduction to jQuery</h3></a>
             <p class="desc">
-              대표적인 MOOC 사이트중 하나인 EDX에서 진행하는 JQuery 수업으로, JQuery에 대한 기본적인 지식을 배우고 실습을 하면서 익힐 수 있었습니다.
+              대표적인 MOOC 사이트중 하나인 EDX에서 진행하는 <span class="mark">JQuery</span> 수업으로, JQuery에 대한 기본적인 지식을 배우고 실습을 하면서 익힐 수 있었습니다.
             </p>
           </div>
         </div>

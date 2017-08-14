@@ -25,19 +25,19 @@
             <form action="process.php" method="post">
               <div class="field">
                 <label for="title">TITLE</label>
-                <input type="text" id="title" name="title" placeholder="Title">
+                <input type="text" id="title" name="title" placeholder="Title" required>
               </div>
               <div class="field half">
                 <label for="name">NAME</label>
-                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="text" id="name" name="name" placeholder="Name" required>
               </div>
               <div class="field half">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" placeholder="Password">
+                <input type="password" id="password" name="password" placeholder="Password" required>
               </div>
               <div class="field">
                 <label for="desc">BOARD</label>
-                <textarea name="desc" id="desc" rows="10" placeholder="Write..."></textarea>
+                <textarea name="desc" id="desc" rows="10" placeholder="Write..." required></textarea>
               </div>
               <div class="field">
                 <input type="submit" name="submit" id="submit" value="POST">

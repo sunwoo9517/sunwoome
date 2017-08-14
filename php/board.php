@@ -42,12 +42,22 @@
         <article class="content">
           <?php
               if(empty($_GET['id'])===false){
-                $sql = "SELECT topic.id, title, author, name, created, description FROM topic LEFT JOIN user ON topic.author=user.id WHERE topic.id=".$_GET['id'];
+                $sql = "SELECT topic.id, title, author, name, created, description, password FROM topic LEFT JOIN user ON topic.author=user.id WHERE topic.id=".$_GET['id'];
                 $result = mysqli_query($conn, $sql);
                 $row = mysqli_fetch_assoc($result);
                 echo '<h2 id="user_title">'.htmlspecialchars($row['title']).'</h2>';
                 echo '<div id="user_name">작성자: '.htmlspecialchars($row['name']).'</div>';
-                echo '<p id="user_desc">'.strip_tags($row['description'], '<a><h1><h2><h3><h4><h5><h6><ul><ol><li>').'</p>';
+          ?>
+          <div id="user_desc">
+            <?php
+                  echo strip_tags($row['description'], '<a><h1><h2><h3><h4><h5><h6><ul><ol><li><br>');
+             ?>
+          </div>
+          <form action="delete.php" method="post">
+            <input type="hidden" name="id" value="<?php echo $row['id']?>">
+            <button onclick="var password = prompt('password');if(password == '<?php echo $row['password']?>'){return true}else{return false};" id="delete" name="delete">지우기</button>
+          </form>
+          <?php
                 echo '<div id="user_date">작성 일자: '.htmlspecialchars($row['created']).'</div>';
               } else {
                 echo '<h2>여기는 게시판입니다.</h2>';
@@ -68,5 +78,18 @@
     <script type="text/javascript" src="../js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../js/jquery.poptrox.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript">
+      $('button').on('click',valid);
+      function valid(){
+        password = prompt("Please enter your password");
+        <?php
+          if(password===$row['password']){
+            return true;
+          } else {
+            return false;
+          }
+        ?>
+      }
+    </script>
   </body>
 </html>

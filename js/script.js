@@ -9,7 +9,7 @@ $(function(){
   function animateRotate(node, angle){
     var $elem = $(node);
     $({deg:0}).animate({deg:angle},{
-      duration: 1300,
+      duration: 1500,
       step: function(now){
         $elem.css({
           transform: 'rotate('+ now +'deg)'
@@ -170,9 +170,9 @@ $(function(){
     },
     enter: function(){
       if($(this)[0].id == "two")
-        {animateRotate('#two img',720);}
+        {animateRotate('#two img',360);}
       if($(this)[0].id == "three")
-        {animateRotate('#three img',1080);}
+        {animateRotate('#three img',360);}
       $(this).removeClass('inactive');
       $(this).find('.inner').animate({opacity:1},800);
       $(this).find('.icon-up-open').animate({bottom:60,opacity:1},2500);
